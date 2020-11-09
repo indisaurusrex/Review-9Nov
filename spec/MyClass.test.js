@@ -6,3 +6,18 @@ describe('#MyClass', () => {
     expect(myClass.name).toBe("India")
   })  
 });
+
+describe('#MyClass', () => {
+  test('should introduce itself', () => {
+    let myClass = new MyClass("India")
+    expect(myClass.introduce()).toBe("Hi, I'm India!")
+  })
+
+  test('should introduce with the right name', () => {
+    let newClass = new MyClass("Yvonne")
+    expect(newClass.introduce()).toBe("Hi, I'm Yvonne!")
+  })
+  
+});
+
+
